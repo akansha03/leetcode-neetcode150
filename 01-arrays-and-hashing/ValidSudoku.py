@@ -11,7 +11,7 @@ Time Complexity: O(n^2)
 Space Complexity: O(n)
 
 Solved: [31/10/2025]
-Revised: [], [], []
+Revised: [19/11/2025], [], []
 Confidence: ⭐⭐⭐⭐⭐
 """
 
