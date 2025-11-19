@@ -11,7 +11,7 @@ Time Complexity: O(n)
 Space Complexity: O(n)
 
 Solved: [29/10/2025]
-Revised: [], [], []
+Revised: [19/11/2025], [], []
 Confidence: ⭐⭐⭐⭐⭐
 """
 from typing import List
@@ -26,8 +26,6 @@ class Solution:
             result[j] *= right
             right *= nums[j]
         return result
-
-
 
 if __name__ == "__main__":
     sol = Solution()
