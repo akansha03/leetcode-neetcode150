@@ -48,6 +48,7 @@ class Solution:
                 else:
                     left += 1
         return result
+
 if __name__ == "__main__":
     sol = Solution()
     assert sol.three_sum([-1,0,1,2,-1,-4]) == [[-1,-1,2],[-1,0,1]]

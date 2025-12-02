@@ -31,6 +31,7 @@ class Solution:
         for i in range(k):
             result.append(heappop(pq)[1])
         return result
+
 if __name__ == "__main__":
     sol = Solution()
     assert sol.topKFrequent([1,1,1,2,2,3], 2) == [2,1]
