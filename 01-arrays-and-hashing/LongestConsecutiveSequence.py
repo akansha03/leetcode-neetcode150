@@ -15,6 +15,7 @@ Revised: [19/11/2025], [], []
 Confidence: ⭐⭐⭐⭐⭐
 """
 from typing import List, Set
+
 class Solution:
     def longestConsecutiveSequence(self, nums: List[int]) -> int:
         sequence_set = set(nums)

@@ -10,7 +10,7 @@ check if the sum is greater than then the target, reduce the right else increase
 once sum is equal to target, return both the pointers]
 
 Time Complexity: O(n)
-Space Complexity: O(n) + O(2)
+Space Complexity: O(2)
 
 Solved: [19/11/2025]
 Revised: [], [], []
