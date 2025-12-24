@@ -9,9 +9,9 @@ Master 150 curated problems with deep pattern recognition for coding interviews.
 |---|-------|----------|-----------|-----------|
 | 1 | Arrays & Hashing | 9 | 9/9 ✅     | ⭐⭐⭐⭐ |
 | 2 | Two Pointers | 5 | 5/5       | ⭐⭐⭐ |
-| 3 | Sliding Window | 6 | 0/6       | - |
-| 4 | Stack | 7 | 0/7       | - |
-| 5 | Binary Search | 7 | 0/7       | - |
+| 3 | Sliding Window | 6 | 6/6       | - |
+| 4 | Stack | 7 | 7/7       | - |
+| 5 | Binary Search | 7 | 2/7       | - |
 | 6 | Linked List | 11 | 0/11      | - |
 | 7 | Trees | 15 | 0/15      | - |
 | 8 | Tries | 3 | 0/3       | - |
