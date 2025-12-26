@@ -6,14 +6,20 @@ Topics: [List]
 
 Pattern: [Binary Search]
 Key Insight:
-*
+•	We solve search in a rotated sorted array using binary search.
+•	Compute mid between low and high; if nums[mid] equals target, return mid.
+•	There are two cases to handle — check which half is sorted.
+•	If nums[low] <= nums[mid], the left half is sorted; check if target lies between low and mid, then move high to mid − 1, else move low to mid + 1.
+•	Else, the right half is sorted; check if target lies between mid and high,
+•	If yes, move low to mid + 1, else move high to mid − 1.
+•	Always use <= where mid should be excluded, and initialize low = 0 and high = len(nums) − 1.
 
 Time Complexity: O(log n)
 Space Complexity: O(1)
 
 Solved: [23/11/2025]
 Revised: [], [], []
-Confidence: ⭐⭐⭐
+Confidence: ⭐⭐⭐⭐
 """
 from typing import List
 class Solution:
