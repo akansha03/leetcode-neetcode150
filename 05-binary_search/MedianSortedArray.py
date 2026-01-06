@@ -25,7 +25,7 @@ elements of the second array are smaller than the right elements of the first ar
 Time Complexity: O(log min(m,n))
 Space Complexity: O(1)
 
-Solved: [26/11/2025]
+Solved: [26/12/2025]
 Revised: [], [], []
 Confidence: ⭐⭐⭐
 """
