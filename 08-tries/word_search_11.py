@@ -9,8 +9,8 @@ Key Insight:
 [An extension of Word Search I, but here return the words found in the matrix. Form a Trie with a list of
 words and then use DFS to search the words in the matrix.]
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(len(word) * len(words)) + O(m*n*4^l)
+Space Complexity: O(W*L) [Trie storing the characters of length l] + O(l) [recursive space]
 
 Solved: [12/02/2026]
 Revised: [], [], []
@@ -35,18 +35,17 @@ class Solution:
         node.isLeaf = True
 
     def findWords(self, board: List[List[str]], words: List[str]) -> List[str]:
-
         m, n = len(board), len(board[0])
         trie = Solution()
 
+        # O(len(word) * len(words))
+
         for word in words:
             trie.insert(word)
-
         result = []
         def dfs(i, j, node, word):
             if i<0 or i>=m or j<0 or j>=n:
                 return
-
             temp = board[i][j]
             if board[i][j] == '#' or temp not in node.children:
                 return
@@ -62,6 +61,7 @@ class Solution:
             dfs(i, j+1, node, word+temp)
             board[i][j] = temp
 
+        # O(m*n*4^l)
         for i in range(m):
             for j in range(n):
                 dfs(i, j, trie.root, '')
